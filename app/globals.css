@@ -1,26 +1,256 @@
-@import "tailwindcss";
+/* @import "tailwindcss"; */
 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8f8f8;
+  --foreground: #111827;
+
+  --navy: #071a2f;
+  --navy-light: #0b223d;
+
+  --gold: #c89b4d;
+  --gold-light: #d6ae67;
+
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-500: #6b7280;
+  --gray-700: #374151;
+
+  --radius: 18px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* -------------------------------- */
+/* Typography */
+/* -------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-semibold tracking-tight;
+}
+
+p {
+  @apply leading-7 text-gray-600;
+}
+
+/* -------------------------------- */
+/* Container */
+/* -------------------------------- */
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-6 lg:px-8;
+}
+
+/* -------------------------------- */
+/* Sections */
+/* -------------------------------- */
+
+.section {
+  @apply py-20 lg:py-28;
+}
+
+/* -------------------------------- */
+/* Buttons */
+/* -------------------------------- */
+
+.btn-primary {
+  @apply inline-flex items-center justify-center
+  rounded-xl
+  bg-[#C89B4D]
+  px-6
+  py-3
+  font-medium
+  text-white
+  transition-all
+  duration-300
+  hover:scale-105
+  hover:bg-[#b68639];
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center
+  rounded-xl
+  border
+  border-[#C89B4D]
+  px-6
+  py-3
+  font-medium
+  text-[#C89B4D]
+  transition-all
+  duration-300
+  hover:bg-[#C89B4D]
+  hover:text-white;
+}
+
+/* -------------------------------- */
+/* Cards */
+/* -------------------------------- */
+
+.card {
+  @apply rounded-2xl bg-white shadow-lg;
+}
+
+.dark-card {
+  @apply rounded-3xl bg-[#071A2F] text-white shadow-2xl;
+}
+
+/* -------------------------------- */
+/* Inputs */
+/* -------------------------------- */
+
+.input {
+  @apply w-full rounded-xl
+  border
+  border-gray-300
+  bg-white
+  px-4
+  py-3
+  outline-none
+  transition
+  duration-300
+  focus:border-[#C89B4D]
+  focus:ring-2
+  focus:ring-[#C89B4D]/30;
+}
+
+/* .input,
+.select {
+  @apply w-full rounded-xl
+  border
+  border-gray-300
+  bg-white
+  px-4
+  py-3
+  outline-none
+  transition
+  duration-300
+  focus:border-[#C89B4D]
+  focus:ring-2
+  focus:ring-[#C89B4D]/30;
+} */
+
+/* .select {
+  appearance: none;
+} */
+
+.select {
+  @apply input appearance-none;
+}
+
+/* -------------------------------- */
+/* Images */
+/* -------------------------------- */
+
+.image-cover {
+  @apply object-cover w-full h-full;
+}
+
+/* -------------------------------- */
+/* Shadows */
+/* -------------------------------- */
+
+.shadow-soft {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.shadow-gold {
+  box-shadow: 0 8px 30px rgba(200, 155, 77, 0.3);
+}
+
+/* -------------------------------- */
+/* Gold Text */
+/* -------------------------------- */
+
+.text-gold {
+  color: var(--gold);
+}
+
+.bg-gold {
+  background: var(--gold);
+}
+
+.bg-navy {
+  background: var(--navy);
+}
+
+/* -------------------------------- */
+/* Scrollbar */
+/* -------------------------------- */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c89b4d;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b68639;
+}
+
+/* -------------------------------- */
+/* Text Selection */
+/* -------------------------------- */
+
+::selection {
+  background: #c89b4d;
+  color: white;
+}
+
+/* -------------------------------- */
+/* Links */
+/* -------------------------------- */
+
+a {
+  text-decoration: none;
+}
+
+/* -------------------------------- */
+/* Hero Overlay */
+/* -------------------------------- */
+
+.hero-overlay {
+  background: linear-gradient(
+    90deg,
+    rgba(7, 26, 47, 0.92) 0%,
+    rgba(7, 26, 47, 0.72) 45%,
+    rgba(7, 26, 47, 0.25) 100%
+  );
+}
+
+/* -------------------------------- */
+/* Responsive */
+/* -------------------------------- */
+
+@media (max-width: 768px) {
+  .section {
+    @apply py-16;
+  }
+
+  .container-custom {
+    @apply px-4;
+  }
 }
