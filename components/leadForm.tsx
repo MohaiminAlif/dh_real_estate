@@ -80,19 +80,19 @@ export default function LeadForm() {
   };
   return (
     <div className="w-full max-w-md rounded-3xl bg-[#071A2F] p-8 text-white shadow-2xl">
-      <h3 className="text-3xl font-bold">
+      <h4 className="text-3xl font-bold">
         Let's Find Your
         <br />
         Dream Home
-      </h3>
+      </h4>
 
-      <p className="mt-3 text-gray-300">
+      <p className="mt-1 text-gray-300">
         Tell us what you're looking for and our team will contact you shortly.
       </p>
 
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="mt-8 space-y-5"
+        className="mt-5 space-y-5"
       >
         {/* Name */}
 

@@ -17,9 +17,10 @@ export default function Hero() {
 
       {/* Content */}
       <div className="container-custom relative z-10 flex min-h-screen items-center">
-        <div className="grid w-full gap-16 lg:grid-cols-2">
+        <div className="grid w-full gap-16 lg:grid-cols-2 mt-2 lg:mt-10 pt-20">
+
           {/* Left Side */}
-          <div className="flex flex-col justify-center text-white">
+          <div className="flex flex-col text-white">
             <span className="mb-4 text-sm uppercase tracking-[0.35em] bg-gradient-to-r from-[#f8e75a] via-[#e9b33a] via-[#d58b2e] to-[#c65a22] bg-clip-text text-transparent">
               Trusted Family Realtor
             </span>
@@ -81,8 +82,7 @@ export default function Hero() {
           </div>
 
           {/* Right Side */}
-          <div className="flex items-center justify-center lg:justify-end relative min-h-screen pt-20 pb-0">
-
+          <div className="flex items-center lg:justify-end relative min-h-screen pt-0 pb-10">
             <LeadForm />
           </div>
         </div>
