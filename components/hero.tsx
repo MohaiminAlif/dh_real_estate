@@ -8,7 +8,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/hero.jpg')",
+          backgroundImage: "url('/images/bgimg.jpg')",
         }}
       />
 
@@ -81,7 +81,7 @@ export default function Hero() {
           </div>
 
           {/* Right Side */}
-          <div className="flex items-center justify-center lg:justify-end">
+          <div className="flex items-center justify-center lg:justify-end relative min-h-screen pt-20">
 
             <LeadForm />
           </div>
