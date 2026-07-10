@@ -21,13 +21,13 @@ export default function Hero() {
           {/* Left Side */}
           <div className="flex flex-col justify-center text-white">
             <span className="mb-4 text-sm uppercase tracking-[0.35em] text-[#C89B4D]">
-              Trusted Toronto Realtor
+              Trusted Family Realtor
             </span>
 
             <h1 className="max-w-xl text-5xl font-bold leading-tight lg:text-7xl">
-              Buying Your
+              Buying Or Selling
               <br />
-              First Home
+              Your Home
               <br />
               <span className="text-[#C89B4D]">
                 Made Simple.
@@ -70,7 +70,7 @@ export default function Hero() {
 
               <div>
                 <h3 className="text-3xl font-bold">
-                  500+
+                  5000+
                 </h3>
 
                 <p className="text-gray-300">
