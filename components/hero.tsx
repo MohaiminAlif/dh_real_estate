@@ -20,7 +20,7 @@ export default function Hero() {
         <div className="grid w-full gap-16 lg:grid-cols-2">
           {/* Left Side */}
           <div className="flex flex-col justify-center text-white">
-            <span className="mb-4 text-sm uppercase tracking-[0.35em] text-[#C89B4D]">
+            <span className="mb-4 text-sm uppercase tracking-[0.35em] bg-gradient-to-r from-[#f8e75a] via-[#e9b33a] via-[#d58b2e] to-[#c65a22] bg-clip-text text-transparent">
               Trusted Family Realtor
             </span>
 
@@ -29,7 +29,7 @@ export default function Hero() {
               <br />
               Your Home?
               <br />
-              <span className="text-[#C89B4D]">
+              <span className="bg-gradient-to-r from-[#f8e75a] via-[#e9b33a] via-[#d58b2e] to-[#c65a22] bg-clip-text text-transparent">
                 Made Simple.
               </span>
             </h1>
@@ -41,8 +41,8 @@ export default function Hero() {
             </p>
 
             <div className="mt-10 flex flex-wrap gap-5">
-              <button className="btn-primary">
-                I'm Looking To Buy
+              <button className="btn-primary bg-gradient-to-r from-[#f8e75a] via-[#e9b33a] via-[#d58b2e] to-[#c65a22]">
+                <span className="text-[black]">I'm Looking To Buy</span>
               </button>
 
               <button className="btn-secondary">
@@ -53,7 +53,7 @@ export default function Hero() {
             {/* Ratings */}
             <div className="mt-14 flex items-center gap-8">
               <div>
-                <div className="mb-2 flex text-[#C89B4D]">
+                <div className="mb-2 flex ">
                   <Star fill="currentColor" size={20} />
                   <Star fill="currentColor" size={20} />
                   <Star fill="currentColor" size={20} />

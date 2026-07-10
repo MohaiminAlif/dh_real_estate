@@ -87,9 +87,11 @@ export default function Navbar() {
 
           {/* CTA */}
           <div className="hidden lg:block">
-            <button className="rounded-xl bg-[#C89B4D] px-6 py-3 font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-[#b68639]">
-              Let's Talk
-            </button>
+          <button className="rounded-xl bg-gradient-to-r from-[#f8e75a] via-[#e9b33a] via-[#d58b2e] to-[#c65a22] px-6 py-3 font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-xl">
+            Let's Talk
+          </button>
+
+
           </div>
 
           {/* Mobile Button */}

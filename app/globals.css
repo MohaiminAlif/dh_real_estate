@@ -95,8 +95,8 @@ p {
   text-[#C89B4D]
   transition-all
   duration-300
-  hover:bg-[#C89B4D]
-  hover:text-white;
+  hover:bg-gradient-to-r from-[#f8e75a] via-[#e9b33a] via-[#d58b2e] to-[#c65a22]
+  hover:text-black;
 }
 
 /* -------------------------------- */

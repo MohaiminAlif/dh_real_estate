@@ -175,7 +175,8 @@ export default function LeadForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full rounded-xl bg-[#C89B4D] py-4 font-semibold transition hover:bg-[#b68639] disabled:opacity-50"
+          className="w-full rounded-xl bg-gradient-to-r from-[#f8e75a] via-[#e9b33a] via-[#d58b2e] to-[#c65a22]
+           py-4 font-semibold transition hover:bg-[#b68639] disabled:opacity-50"
         >
           {isSubmitting
             ? "Submitting..."
