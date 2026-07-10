@@ -169,7 +169,7 @@ export default function LeadForm() {
         <textarea
           {...register("message")}
           className="input min-h-[120px] text-black"
-          placeholder="Additional Information"
+          placeholder="Tell us more"
         />
 
         <button

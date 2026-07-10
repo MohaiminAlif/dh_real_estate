@@ -46,7 +46,7 @@ export default function FeaturedProperties() {
           </div>
 
           <button className="btn-primary">
-            View All Listings
+            Let's Connect
           </button>
         </div>
 

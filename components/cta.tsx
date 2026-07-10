@@ -27,7 +27,7 @@ export default function CTA() {
             help you every step of the way.
           </p>
 
-          <div className="mt-10 flex flex-wrap justify-center gap-5">
+          {/* <div className="mt-10 flex flex-wrap justify-center gap-5">
             <button className="btn-primary">
               Book A Consultation
             </button>
@@ -35,7 +35,7 @@ export default function CTA() {
             <button className="btn-secondary">
               Browse Listings
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

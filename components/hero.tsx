@@ -27,7 +27,7 @@ export default function Hero() {
             <h1 className="max-w-xl text-5xl font-bold leading-tight lg:text-7xl">
               Buying Or Selling
               <br />
-              Your Home
+              Your Home?
               <br />
               <span className="text-[#C89B4D]">
                 Made Simple.
@@ -81,7 +81,7 @@ export default function Hero() {
           </div>
 
           {/* Right Side */}
-          <div className="flex items-center justify-center lg:justify-end relative min-h-screen pt-20">
+          <div className="flex items-center justify-center lg:justify-end relative min-h-screen pt-20 pb-0">
 
             <LeadForm />
           </div>

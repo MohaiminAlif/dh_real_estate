@@ -4,7 +4,7 @@ import { Award, BadgeCheck, Phone, Home } from "lucide-react";
 const stats = [
   {
     icon: Home,
-    number: "500+",
+    number: "5000+",
     label: "Homes Sold",
   },
   {
