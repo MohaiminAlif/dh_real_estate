@@ -13,32 +13,32 @@ const features = [
     icon: HeartHandshake,
     title: "Client First",
     description:
-      "Your goals come first. We focus on providing a smooth and stress-free buying or selling experience.",
+      "Your dreams come first. We focus on providing a smooth and stress-free buying or selling experience.",
   },
   {
     icon: House,
     title: "Market Expertise",
     description:
-      "Deep knowledge of the local market helps you make informed and confident real estate decisions.",
+      "Deep knowledge of the local market helps you make informed and confident.",
   },
   {
     icon: ShieldCheck,
     title: "Trusted Guidance",
     description:
-      "From your first consultation to closing day, we're with you every step of the way.",
+      "From your first viewing to closing day, we're with you every step of the way.",
   },
   {
     icon: Users,
-    title: "Strong Negotiation",
+    title: "Strong Partner",
     description:
       "We negotiate aggressively on your behalf to secure the best possible outcome.",
   },
-  {
-    icon: BadgeCheck,
-    title: "Proven Results",
-    description:
-      "Hundreds of successful transactions and happy families who trust our experience.",
-  },
+  // {
+  //   icon: BadgeCheck,
+  //   title: "Proven Results",
+  //   description:
+  //     "Hundreds of successful transactions and happy families who trust our experience.",
+  // },
 ];
 
 export default function Features() {
@@ -51,12 +51,12 @@ export default function Features() {
           </span>
 
           <h2 className="mt-4 text-4xl font-bold text-[#071A2F] lg:text-5xl">
-            A Better Real Estate Experience
+            A Family Experience
           </h2>
 
           <p className="mt-6 text-lg text-gray-600">
             We combine local expertise, personalized service, and proven
-            strategies to help you achieve your real estate goals with
+            strategies to help you achieve your real estate dreams with
             confidence.
           </p>
         </div>
