@@ -3,7 +3,6 @@ import {
   HeartHandshake,
   ShieldCheck,
   Users,
-  BadgeCheck,
 } from "lucide-react";
 
 import FeatureCard from "./featureCard";
@@ -61,7 +60,7 @@ export default function Features() {
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-5">
+        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
           {features.map((feature) => (
             <FeatureCard
               key={feature.title}
