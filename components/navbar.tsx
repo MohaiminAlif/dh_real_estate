@@ -13,12 +13,12 @@ const navLinks = [
   {
     name: "Buy",
     href: "#",
-    dropdown: true,
+    dropdown: false,
   },
   {
     name: "Sell",
-    href: "#",
-    dropdown: true,
+    href: "/sell",
+        
   },
   {
     name: "About Us",
