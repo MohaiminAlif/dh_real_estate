@@ -26,7 +26,7 @@ const navLinks = [
   },
   {
     name: "Our Process",
-    href: "#process",
+    href: "/#process",
   },
   {
     name: "Testimonials",

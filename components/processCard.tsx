@@ -2,13 +2,14 @@ import { LucideIcon } from "lucide-react";
 
 interface ProcessCardProps {
   
+  key: number;
   title: string;
   description: string;
   icon: LucideIcon;
 }
 
 export default function ProcessCard({
- 
+  key,
   title,
   description,
   icon: Icon,

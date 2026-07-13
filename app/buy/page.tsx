@@ -7,7 +7,7 @@ export default function BuyPage() {
     
       className="relative min-h-screen bg-cover bg-center"
       style={{
-        backgroundImage: "url('/images/bgimg.jpg')",
+        backgroundImage: "url('/images/bgimgbuy.webp')",
       }}
     >
     

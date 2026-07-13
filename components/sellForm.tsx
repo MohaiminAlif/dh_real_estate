@@ -172,6 +172,7 @@ export default function SellForm() {
 
 <button
     type="submit"
+    disabled={isSubmitting}
     className="
         mt-10
         w-full
@@ -187,7 +188,7 @@ export default function SellForm() {
         hover:shadow-[#C89B4D]/30
     "
 >
-    Submit Property
+    {isSubmitting ? "Submitting..." : "Sell Property"}
 </button>
     </form>
   );

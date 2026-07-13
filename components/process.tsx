@@ -6,30 +6,32 @@ import {
 } from "lucide-react";
 
 import ProcessCard from "./processCard";
+import { id } from "zod/locales";
 
 const steps = [
   {
+    id: 1,
     icon: Search,
     title: "Consultation",
     description:
       "We start by understanding your goals, budget and timeline to create a personalized strategy.",
   },
   {
-    
+    id: 2,
     icon: House,
     title: "Property Search",
     description:
       "We carefully shortlist homes that match your needs and arrange private viewings.",
   },
   {
-    
+    id: 3,
     icon: FileCheck,
     title: "Negotiation",
     description:
       "From offers to inspections and paperwork, we negotiate to secure the best deal possible.",
   },
   {
-    
+    id: 4,
     icon: KeyRound,
     title: "Closing Day",
     description:
@@ -66,15 +68,17 @@ export default function Process() {
           {/* Horizontal line */}
           <div className="absolute top-12 left-0 hidden h-1 w-full rounded-full bg-[#C89B4D]/30 lg:block" />
 
-          {/* <div className="grid gap-10 lg:grid-cols-4">
+          <div className="grid gap-10 lg:grid-cols-4">
             {steps.map((step) => (
               <ProcessCard
+                
+                key={step.id}
                 icon={step.icon}
                 title={step.title}
                 description={step.description}
               />
             ))}
-          </div> */}
+          </div>
         </div>
       </div>
     </section>

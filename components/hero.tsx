@@ -1,7 +1,22 @@
+'use client';
 import { ArrowRight, Star } from "lucide-react";
 import LeadForm from "./leadForm";
+import { useRouter } from 'next/navigation';
 
 export default function Hero() {
+
+  const router = useRouter();
+
+  const handleClickSell = () => {
+    // Perform any custom TypeScript logic here first
+    router.push('/sell');
+  }; 
+
+    const handleClickBuy = () => {
+    // Perform any custom TypeScript logic here first
+    router.push('/sell');
+  }; 
+
   return (
     <section className="relative min-h-screen overflow-hidden">
       {/* Background */}
@@ -42,11 +57,11 @@ export default function Hero() {
             </p>
 
             <div className="mt-10 flex flex-wrap gap-5">
-              <button className="btn-primary bg-gradient-to-r from-[#f8e75a] via-[#e9b33a] via-[#d58b2e] to-[#c65a22]">
+              <button className="btn-primary bg-gradient-to-r from-[#f8e75a] via-[#e9b33a] via-[#d58b2e] to-[#c65a22]" type="button" onClick={handleClickBuy}>
                 <span className="text-[black]">I'm Looking To Buy</span>
               </button>
 
-              <button className="btn-secondary">
+              <button className="btn-secondary" type="button" onClick={handleClickSell}>
                 I'm Looking To Sell
               </button>
             </div>
