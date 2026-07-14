@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import {
   Search,
   House,
@@ -6,7 +9,6 @@ import {
 } from "lucide-react";
 
 import ProcessCard from "./processCard";
-import { id } from "zod/locales";
 
 const steps = [
   {
@@ -39,6 +41,15 @@ const steps = [
   },
 ];
 
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.25,
+    },
+  },
+};
+
 export default function Process() {
   return (
     <section
@@ -66,19 +77,28 @@ export default function Process() {
         {/* Timeline */}
         <div className="relative mt-24">
           {/* Horizontal line */}
-          <div className="absolute top-12 left-0 hidden h-1 w-full rounded-full bg-[#C89B4D]/30 lg:block" />
+          <div className="absolute left-0 top-12 hidden h-1 w-full rounded-full bg-[#C89B4D]/30 lg:block" />
 
-          <div className="grid gap-10 lg:grid-cols-4">
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{
+              once: true,
+              amount: 0.3,
+            }}
+            className="grid gap-10 lg:grid-cols-4"
+          >
             {steps.map((step) => (
               <ProcessCard
-                
                 key={step.id}
+                step={step.id}
                 icon={step.icon}
                 title={step.title}
                 description={step.description}
               />
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

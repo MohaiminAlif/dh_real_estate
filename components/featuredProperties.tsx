@@ -1,5 +1,6 @@
 import PropertyCard from "./propertyCard";
 
+
 const properties = [
   {
     image: "/properties/home1.jpg",
@@ -31,8 +32,9 @@ const properties = [
 ];
 
 export default function FeaturedProperties() {
+  
   return (
-    <section className="section bg-[#F8F8F8]">
+    <section id="featuredProperties" className="section bg-[#F8F8F8]">
       <div className="container-custom">
         <div className="flex flex-col items-center justify-between gap-6 lg:flex-row">
           <div>

@@ -31,7 +31,7 @@ export default function AgentSection() {
 
 
             <div className="absolute -bottom-8 right-8 rounded-2xl bg-[#071A2F] p-6 text-white shadow-xl">
-              <p className="text-3xl font-bold">500+</p>
+              <p className="text-3xl font-bold">5000+</p>
               <p className="text-gray-300">Happy Families</p>
             </div>
           </div>

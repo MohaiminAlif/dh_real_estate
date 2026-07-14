@@ -8,13 +8,11 @@ export default function Hero() {
   const router = useRouter();
 
   const handleClickSell = () => {
-    // Perform any custom TypeScript logic here first
     router.push('/sell');
   }; 
 
     const handleClickBuy = () => {
-    // Perform any custom TypeScript logic here first
-    router.push('/sell');
+    router.push('/buy');
   }; 
 
   return (

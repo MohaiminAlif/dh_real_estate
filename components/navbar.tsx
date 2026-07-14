@@ -32,6 +32,10 @@ const navLinks = [
     name: "Testimonials",
     href: "/#testimonials",
   },
+    {
+    name: "Explore Properties",
+    href: "/#featuredProperties",
+  },
   {
     name: "Contact",
     href: "/#contact",
