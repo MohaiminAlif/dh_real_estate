@@ -182,7 +182,7 @@ export default function BuyForm() {
             {...register("bedrooms")}
             className="w-full rounded-xl bg-white/10 border border-white/20 p-4 text-white"
           >
-            {[1,2,3,4,5,6,7,8].map((n) => (
+            {[1,2,3,4,5,"more than 5"].map((n) => (
               <option key={n} value={n} className="text-black">
                 {n}
               </option>
@@ -200,7 +200,7 @@ export default function BuyForm() {
             {...register("washrooms")}
             className="w-full rounded-xl bg-white/10 border border-white/20 p-4 text-white"
           >
-            {[1,2,3,4,5,6].map((n) => (
+            {[1,2,3,4,5,"more than 5"].map((n) => (
               <option key={n} value={n} className="text-black">
                 {n}
               </option>

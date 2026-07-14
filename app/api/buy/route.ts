@@ -77,6 +77,10 @@ export async function POST(request: Request) {
       ["parking", parking],
 
     ];
+    const selectedPropertyTypes = formData.getAll("propertyType"); 
+
+    const propertyTypesText = selectedPropertyTypes.join(", ");
+
 
     fields.forEach(([label, value]) => {
       page.drawText(`${label}: ${value}`, {
@@ -145,9 +149,9 @@ export async function POST(request: Request) {
 
             <tr>
               <td><strong>Property Type</strong></td>
-              <td>${propertyType}</td>
+              <td>${propertyTypesText}</td>
             </tr>
-            
+     
             <tr>
               <td><strong>Bedrooms Required</strong></td>
               <td>${bedrooms}</td>
