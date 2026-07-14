@@ -2,6 +2,7 @@
 
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
+import "../app/globals.css";
 
 type BuyFormData = {
   name: string;
@@ -65,7 +66,7 @@ export default function BuyForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="relative mx-auto w-full max-w-xl rounded-3xl border border-white/30 bg-white-900/35 backdrop-blur- shadow-[0_8px_40px_rgba(300,300,300,0.35)] p-10 overflow-hidden"
+       className="relative mx-auto w-full max-w-xl rounded-3xl border border-white/30 bg-white-900/35 backdrop-magnify shadow-[0_8px_40px_rgba(300,300,300,0.35)] p-10 overflow-hidden"
     >
       <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/10 via-white/5 to-transparent pointer-events-none" />
 

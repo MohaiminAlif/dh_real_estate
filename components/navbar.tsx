@@ -22,7 +22,7 @@ const navLinks = [
   },
   {
     name: "About Us",
-    href: "#about",
+    href: "/#about",
   },
   {
     name: "Our Process",
@@ -30,11 +30,11 @@ const navLinks = [
   },
   {
     name: "Testimonials",
-    href: "#testimonials",
+    href: "/#testimonials",
   },
   {
     name: "Contact",
-    href: "#contact",
+    href: "/#contact",
   },
 ];
 

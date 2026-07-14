@@ -254,3 +254,11 @@ a {
     @apply px-4;
   }
 }
+
+@layer utilities {
+  .backdrop-magnify {
+    /* Fakes refraction by slightly distorting the background context */
+    backdrop-filter: brightness(1.1) contrast(1.1) saturate(1.2);
+    -webkit-backdrop-filter: brightness(1.1) contrast(1.1) saturate(1.2);
+  }
+}
