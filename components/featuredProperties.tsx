@@ -1,4 +1,6 @@
+'use client';
 import PropertyCard from "./propertyCard";
+import { useRouter } from 'next/navigation';
 
 
 const properties = [
@@ -33,6 +35,10 @@ const properties = [
 
 export default function FeaturedProperties() {
   
+    const router = useRouter();
+  const handleClickBuy = () => {
+    router.push('/buy');
+  };
   return (
     <section id="featuredProperties" className="section bg-[#F8F8F8]">
       <div className="container-custom">
@@ -47,7 +53,7 @@ export default function FeaturedProperties() {
             </h2>
           </div>
 
-          <button className="btn-primary">
+          <button className="btn-primary" onClick={handleClickBuy}>
             Let's Connect
           </button>
         </div>

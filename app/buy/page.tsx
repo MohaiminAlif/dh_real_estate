@@ -15,7 +15,7 @@ export default function BuyPage() {
       <Navbar />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/55" />
+      <div className="absolute inset-0 bg-black/60" />
 
       <div className="relative z-10 flex min-h-screen items-center justify-center px-6 py-32">
         <div className="mx-auto w-full max-w-7xl grid gap-16 lg:grid-cols-2">
