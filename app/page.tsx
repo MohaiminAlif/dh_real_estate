@@ -6,12 +6,14 @@ import AgentSection from "@/components/agentSection";
 import CTA from "@/components/cta";
 import Footer from "@/components/footer";
 import FeaturedProperties from "@/components/featuredProperties";
+// import { Analytics } from "@vercel/analytics/next"
 
 
 
 export default function Home() {
   return (
     <>
+    {/* <Analytics/> */}
       <Navbar />
       <main>
         <Hero />

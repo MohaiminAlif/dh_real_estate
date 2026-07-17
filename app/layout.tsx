@@ -56,6 +56,7 @@ export default function RootLayout({
             duration: 4000,
           }}
         />
+        <Analytics/>
       </body>
     </html>
   );
