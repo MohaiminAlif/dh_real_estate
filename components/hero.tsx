@@ -18,15 +18,27 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden">
       {/* Background */}
-      <div
+      {/* <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/images/logo.png')",
+          backgroundImage: "url('/images/blacklogo.png')",
+        }}
+      /> */}
+            {/* Background */}
+      {/* Background */}
+      <div
+        className="absolute inset-0 bg-[length:100%_100%] bg-no-repeat"
+        style={{
+          backgroundImage: "url('/images/blacklogo.png')",
         }}
       />
 
+
+
       {/* Dark Overlay */}
-      <div className="hero-overlay absolute inset-0" />
+      {/* <div className="hero-overlay absolute inset-0" /> */}
+            {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/70" />
 
       {/* Content */}
       <div className="container-custom relative z-10 flex min-h-screen items-center">
@@ -65,22 +77,7 @@ export default function Hero() {
             </div>
 
             {/* Ratings */}
-            <div className="mt-14 flex items-center gap-8">
-              <div>
-                <div className="mb-2 flex ">
-                  <Star fill="currentColor" size={20} />
-                  <Star fill="currentColor" size={20} />
-                  <Star fill="currentColor" size={20} />
-                  <Star fill="currentColor" size={20} />
-                  <Star fill="currentColor" size={20} />
-                </div>
-
-                <p className="font-semibold text-white">
-                  5.0 Google Rating
-                </p>
-              </div>
-
-              <div className="h-12 w-px bg-white/20" />
+            <div className="mt-14 flex items-center gap-8">  
 
               <div>
                 <h3 className="text-3xl font-bold">

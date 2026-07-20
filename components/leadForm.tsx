@@ -24,32 +24,6 @@ export default function LeadForm() {
     },
   });
 
-  // const onSubmit = async (data: LeadFormData) => {
-  //   try {
-  //     const response = await fetch("/api/contact", {
-  //       method: "POST",
-
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-
-  //       body: JSON.stringify(data),
-  //     });
-
-  //     const result = await response.json();
-
-  //     if (!response.ok) {
-  //       throw new Error(result.message);
-  //     }
-
-  //     alert("Thank you! We received your request.");
-
-  //     reset();
-  //   } catch (error: any) {
-  //     alert(error.message);
-  //   }
-  // };
-
   const onSubmit = async (data: LeadFormData) => {
     try {
       const response = await fetch("/api/contact", {
@@ -79,8 +53,13 @@ export default function LeadForm() {
     }
   };
   return (
-    <div className="w-full max-w-md rounded-3xl bg-[#071A2F] p-8 text-white shadow-2xl">
-      <h4 className="text-3xl font-bold">
+    <div 
+    // className="w-full max-w-md rounded-3xl bg-[#071A2F] p-8 text-white shadow-2xl"
+    className="relative mx-auto w-full max-w-l rounded-3xl border border-white/30 bg-white-900/35 backdrop-magnify shadow-[0_8px_40px_rgba(300,300,300,0.35)] p-10 overflow-hidden"
+    >
+    
+      
+      <h4 className="text-3xl font-bold text-gray-300">
         Let's Find Your
         <br />
         Dream Home
