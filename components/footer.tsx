@@ -36,7 +36,7 @@ export default function Footer() {
   return (
     <footer id="contact" className="bg-[#071A2F] text-white">
       <div className="container-custom py-20">
-        <div className="grid gap-16 lg:grid-cols-4">
+        <div className="grid gap-5 lg:grid-cols-4">
           {/* Brand */}
           <div>
             <Logo />
@@ -100,12 +100,12 @@ export default function Footer() {
             <div className="space-y-5 text-gray-300">
               <div className="flex gap-3">
                 <Phone className="text-[#C89B4D]" size={20} />
-                (123) 456-7890
+                416-450-0741
               </div>
 
               <div className="flex gap-3">
                 <Mail className="text-[#C89B4D]" size={20} />
-                info@example.com
+                  dewanhaquerealestate@gmail.com
               </div>
 
               <div className="flex gap-3">

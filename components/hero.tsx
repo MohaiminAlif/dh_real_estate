@@ -18,20 +18,20 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden">
       {/* Background */}
-      {/* <div
+      <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/images/blacklogo.png')",
+          backgroundImage: "url('/images/bgimg.jpg')",
         }}
-      /> */}
-            {/* Background */}
-      {/* Background */}
-      <div
+      />
+
+      {/* Background*/}
+      {/* <div
         className="absolute inset-0 bg-[length:100%_100%] bg-no-repeat"
         style={{
           backgroundImage: "url('/images/blacklogo.png')",
         }}
-      />
+      />  */}
 
 
 
